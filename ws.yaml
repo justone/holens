@@ -1,0 +1,18 @@
+#!/usr/bin/env holen
+---
+desc: websocket command line tool
+strategies:
+    binary:
+        base_url: http://holen.endot.org/bins/ws/ws_{{.Version}}_{{.OSArch}}{{.OSArchData.ext}}
+        os_arch:
+            windows_amd64:
+                ext: .exe
+        versions:
+          - version: '0.2.1'
+            os_arch:
+                linux_amd64:
+                    sha256sum: 985fec319bbd02712cf6668e9d3c8f7031dc4371b638e924c8a579ecc2b049b8
+                darwin_amd64:
+                    sha256sum: 793a351a57219ad747efdab168886d51248c339dfdcc46397a5cc6a8b5fa25eb
+                windows_amd64:
+                    sha256sum: 4b65551b85632b067803b94b3b83cc12f3747b167a09f6f55d9d160d8644b974
